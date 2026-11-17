@@ -39,7 +39,7 @@
       "id": "t5",
       "message": "do you do trade-ins?",
       "answers": [
-        "We do not take trade-ins. The shop on Av. Belgrano does."
+        "We do not take trade-ins. The shop across the street does."
       ],
       "escalated": false,
       "note": "A refusal that settles the question is a full answer. A judge that calls this 'none' is miscalibrated."
