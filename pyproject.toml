@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "shadow-judge"
+version = "0.1.0"
+description = "Replay what your LLM pipeline already did through a judge, and measure what the judge would have changed — before you let it act."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["llm", "evaluation", "llm-as-judge", "shadow-mode", "guardrails"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []
+
+[project.optional-dependencies]
+openai = ["openai>=1.0"]
+anthropic = ["anthropic>=0.40"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+shadow-judge = "shadow_judge.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/shadow_judge"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

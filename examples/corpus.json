@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "turns": [
+    {
+      "id": "t1",
+      "message": "hi! do you take credit cards?",
+      "answers": [
+        "We take credit and debit cards, and bank transfer."
+      ],
+      "escalated": false
+    },
+    {
+      "id": "t2",
+      "message": "how long does delivery take to Rosario?",
+      "answers": [
+        "We ship nationwide. Delivery is 3-5 business days."
+      ],
+      "escalated": false
+    },
+    {
+      "id": "t3",
+      "message": "do you have MagSafe cases for the 15 Pro?",
+      "answers": [
+        "Our charging cubes come in 20W and 30W, both in stock."
+      ],
+      "escalated": false,
+      "note": "The classic trap: a neighbouring accessory category. The right FAQ was never going to exist, and the answer that got picked is about something else. This is what a judge is for."
+    },
+    {
+      "id": "t4",
+      "message": "what's the price of the 15 Pro, and do you have it in blue?",
+      "answers": [
+        "The iPhone 15 Pro is 1,250 USD."
+      ],
+      "escalated": false,
+      "note": "Two questions asked, one answered. A partial — and the one you have to decide about, because there are many of these."
+    },
+    {
+      "id": "t5",
+      "message": "do you do trade-ins?",
+      "answers": [
+        "We do not take trade-ins. The shop on Av. Belgrano does."
+      ],
+      "escalated": false,
+      "note": "A refusal that settles the question is a full answer. A judge that calls this 'none' is miscalibrated."
+    },
+    {
+      "id": "t6",
+      "message": "can I pay in 12 instalments?",
+      "answers": [
+        "We take credit and debit cards, and bank transfer."
+      ],
+      "escalated": true,
+      "note": "Answered automatically AND later escalated anyway: the customer came back. Already on a person's desk, so a judge withholding it changes nothing — which is why it is excluded from `withheld`."
+    },
+    {
+      "id": "t7",
+      "message": "my order arrived damaged, what now",
+      "answers": [],
+      "escalated": true,
+      "note": "Never answered automatically, already with a person. Outside the denominator: there is nothing here to withhold."
+    },
+    {
+      "id": "t8",
+      "message": "are you open on Saturday?",
+      "answers": [
+        "Monday to Friday, 9 to 18. Saturdays 9 to 13."
+      ],
+      "escalated": false
+    },
+    {
+      "id": "t9",
+      "message": "do you have the Pencil in stock?",
+      "answers": [
+        "We carry the Apple Pencil (USB-C) and the Pencil Pro."
+      ],
+      "escalated": false
+    },
+    {
+      "id": "t10",
+      "message": "I want to return something I bought last week",
+      "answers": [],
+      "escalated": true
+    }
+  ]
+}
