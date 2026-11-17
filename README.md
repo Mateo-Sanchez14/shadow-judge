@@ -47,10 +47,15 @@ week.
 
 ## Install
 
+Not on PyPI yet — install from the repository:
+
 ```bash
-pip install shadow-judge           # core, no dependencies
-pip install 'shadow-judge[openai]' # or [anthropic]
+pip install 'git+https://github.com/Mateo-Sanchez14/shadow-judge'
+pip install 'shadow-judge[openai] @ git+https://github.com/Mateo-Sanchez14/shadow-judge'
 ```
+
+The core has no dependencies; `openai` and `anthropic` are extras you only need
+for the adapter you actually use.
 
 ## Use it
 
